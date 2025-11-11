@@ -13,7 +13,7 @@ Features
 Install
 - With Go installed (1.20+ recommended):
   - From source in this repo: `go build -o gocalculate ./cmd/gocalculate`
-  - Or run without building: `go run ./cmd/gocalculate --help`
+  - Show usage without building: `go run ./cmd/gocalculate`
 
 Usage
 - General: `gocalculate <command> [numbers...]`
@@ -25,6 +25,7 @@ Usage
   - `pow a b`                a^b
   - `sqrt a`                 Square root of a (a >= 0)
   - `repl`                   Interactive shell (type commands)
+  - Tip: run with no arguments to see usage
 
 Examples
 ```
@@ -78,4 +79,3 @@ Exit Codes
 Notes
 - All math uses `float64`.
 - Division and subtraction operate left‑to‑right over the provided operands.
-
